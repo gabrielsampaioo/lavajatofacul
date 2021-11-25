@@ -4,6 +4,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import { Home } from "../screens/Home";
 import { SignIn } from "../screens/SignIn";
+import { RegisterCar } from "../screens/RegisterCar";
+import { RegisterService } from "../screens/RegisterService";
+import { OrderService } from "../screens/OrderService";
 
 
 const Stack = createStackNavigator();
@@ -24,6 +27,19 @@ export function AuthRoutes() {
         name='Home'
         component={Home}
       />
+      <Stack.Screen
+        name='RegisterCar'
+        component={RegisterCar}
+      />
+      <Stack.Screen
+        name='RegisterService'
+        component={RegisterService}
+      />
+      <Stack.Screen
+        name='OrderService'
+        component={OrderService}
+      />
+
     </Stack.Navigator>
   )
 }
