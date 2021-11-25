@@ -62,5 +62,16 @@ export const styles = StyleSheet.create({
   },
   textButton: {
     fontFamily: theme.fonts.title700,
-  }
+  },
+  error: {
+    position: 'relative',
+    top: 5
+  },
+  error__text: (text = 'none') => ({
+    color: "#800000",
+    fontFamily: theme.fonts.title700,
+    fontSize: 15,
+    fontWeight: 'bold',
+    display: text
+  })
 })
